@@ -41,11 +41,6 @@ for i = 1:size(x, 1)
     tmpNode.appendChild(tmpTag);
     
     tmpTag = docNode.createElement('tag');
-    tmpTag.setAttribute('k', 'fire_hydrant:pressure');
-    tmpTag.setAttribute('v', 'yes');
-    tmpNode.appendChild(tmpTag);
-    
-    tmpTag = docNode.createElement('tag');
     tmpTag.setAttribute('k', 'ref');
     tmpTag.setAttribute('v', num2str(ref(i)));
     tmpNode.appendChild(tmpTag);
